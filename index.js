@@ -1,17 +1,17 @@
-var $hoiiz$airgapbeaconsdk = require("@airgap/beacon-sdk");
+var $7KnBk$airgapbeaconsdk = require("@airgap/beacon-sdk");
 
 
-const $bc66fb7cfd9ce5fc$var$dAppClient = new (0, $hoiiz$airgapbeaconsdk.DAppClient)({
+const $7bd4dc5f754c3852$var$dAppClient = new (0, $7KnBk$airgapbeaconsdk.DAppClient)({
     name: "eatacid.xyz",
-    preferredNetwork: (0, $hoiiz$airgapbeaconsdk.NetworkType).GHOSTNET
+    preferredNetwork: (0, $7KnBk$airgapbeaconsdk.NetworkType).GHOSTNET
 });
-async function $bc66fb7cfd9ce5fc$export$43158100a9ac6874() {
+async function $7bd4dc5f754c3852$export$43158100a9ac6874() {
     try {
         const network = {
-            type: (0, $hoiiz$airgapbeaconsdk.NetworkType).GHOSTNET,
+            type: (0, $7KnBk$airgapbeaconsdk.NetworkType).GHOSTNET,
             rpcUrl: "https://ghostnet.tezos.marigold.dev" // Ghostnet RPC URL
         };
-        const permissions = await $bc66fb7cfd9ce5fc$var$dAppClient.requestPermissions({
+        const permissions = await $7bd4dc5f754c3852$var$dAppClient.requestPermissions({
             network: network
         });
         console.log("Permissions:", permissions);
@@ -23,7 +23,7 @@ async function $bc66fb7cfd9ce5fc$export$43158100a9ac6874() {
 document.addEventListener("DOMContentLoaded", ()=>{
     const connectButton = document.querySelector(".button-primary.w-button");
     if (connectButton) connectButton.addEventListener("click", function() {
-        $bc66fb7cfd9ce5fc$export$43158100a9ac6874();
+        $7bd4dc5f754c3852$export$43158100a9ac6874();
     });
     else console.error("Connect wallet button not found");
 });
